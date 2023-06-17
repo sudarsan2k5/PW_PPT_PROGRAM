@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Find_max_and_min {
+    public static void max_min(int[] arr){
+        if(arr == null || arr.length == 0)return;
+        int min = arr[0];
+        int max = arr[0];
+        for(int i = 1; i < arr.length; i++){
+            if(arr[i] < min){
+                min = arr[i];
+            }
+            if(arr[i] > max){
+                max = arr[i];
+            }
+        }
+        System.out.println("The Min Value is: " + min);
+        System.out.print("The Max Value is: " + max);
+    }
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+        System.out.print("Enter Array Size: ");
+        int n = scn.nextInt();
+        int [] arr = new int[n];
+        for(int i = 0; i < arr.length; i++){
+            arr[i] = scn.nextInt();
+        }
+        max_min(arr);
+
+    }
+}
