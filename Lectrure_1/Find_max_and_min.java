@@ -6,12 +6,14 @@ public class Find_max_and_min {
         int min = arr[0];
         int max = arr[0];
         for(int i = 1; i < arr.length; i++){
-            if(arr[i] < min){
-                min = arr[i];
-            }
-            if(arr[i] > max){
-                max = arr[i];
-            }
+//            if(arr[i] < min){
+//                min = arr[i];
+//            }
+//            if(arr[i] > max){
+//                max = arr[i];
+//            }
+            min = Math.min(min, arr[i]);
+            max = Math.max(max, arr[i]);
         }
         System.out.println("The Min Value is: " + min);
         System.out.print("The Max Value is: " + max);
