@@ -9,7 +9,6 @@ public class First_Unique_Character_in_a_String {
         for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
             if (count[c - 'a'] == 1) {
-                System.out.println("Non Repeating character: " + c);
                 return i;
             }
         }
