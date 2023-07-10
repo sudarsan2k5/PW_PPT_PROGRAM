@@ -50,4 +50,3 @@ function validateForm(event) {
   
   const form = document.getElementById('myForm');
   form.addEventListener('submit', validateForm);
-  
