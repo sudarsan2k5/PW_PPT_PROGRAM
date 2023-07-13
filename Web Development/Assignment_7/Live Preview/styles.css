@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+  }
+  
+  .form-section,
+  .preview-section {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  #namePreview,
+  #emailPreview,
+  #messagePreview {
+    font-weight: bold;
+  }
+  
